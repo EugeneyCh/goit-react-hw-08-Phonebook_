@@ -5,12 +5,12 @@ import Filter from 'components/Filter/filter';
 import ListContacts from 'components/ContactList/ContactList';
 import Contact from 'components/Contact/contact';
 import { fetchContacts } from 'redux/users/operations';
-import { getIsLoading } from 'redux/users/selectors';
-import Loader from 'components/Loader/loader';
+// import { getIsLoading } from 'redux/users/selectors';
+// import Loader from 'components/Loader/loader';
 
 export default function ContactsView() {
   const dispatch = useDispatch();
-  const isloading = useSelector(getIsLoading);
+  //   const isloading = useSelector(getIsLoading);
 
   useEffect(() => {
     dispatch(fetchContacts);
